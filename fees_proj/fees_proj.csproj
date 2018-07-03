@@ -52,19 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="account_information_parameter.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="account_information_parameter_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="account_parameter_values.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="account_parameter_values_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="bank_currency_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="data_classes\dormitory_bank_details_data.cs" />
     <Compile Include="data_classes\dormitory_data.cs" />
@@ -73,76 +73,76 @@
     <Compile Include="data_classes\room_data.cs" />
     <Compile Include="data_classes\room_facility_data.cs" />
     <Compile Include="dormitories_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="dormitories_table_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="dormitory_bank_account_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="dormitory_information_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="dormitory_information_table_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="dormitory_type.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="dormitory_type_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="facility_option.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="facility_option_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="facility_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="facility_table_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
-    <Compile Include="fees_and_facilities_model.Context.cs">
+    <Compile Include="fees_and_facilities_model4.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>fees_and_facilities_model.Context.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="fees_and_facilities_model.cs">
+    <Compile Include="fees_and_facilities_model4.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
-    <Compile Include="fees_and_facilities_model.Designer.cs">
+    <Compile Include="fees_and_facilities_model4.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>fees_and_facilities_model.edmx</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.edmx</DependentUpon>
     </Compile>
     <Compile Include="language_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="room_facility.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="room_table.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
     <Compile Include="room_table_translation.cs">
-      <DependentUpon>fees_and_facilities_model.tt</DependentUpon>
+      <DependentUpon>fees_and_facilities_model4.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="fees_and_facilities_model.edmx">
+    <EntityDeploy Include="fees_and_facilities_model4.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>fees_and_facilities_model.Designer.cs</LastGenOutput>
+      <LastGenOutput>fees_and_facilities_model4.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="fees_and_facilities_model.edmx.diagram">
-      <DependentUpon>fees_and_facilities_model.edmx</DependentUpon>
+    <None Include="fees_and_facilities_model4.edmx.diagram">
+      <DependentUpon>fees_and_facilities_model4.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -150,15 +150,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fees_and_facilities_model.Context.tt">
+    <Content Include="fees_and_facilities_model4.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>fees_and_facilities_model.edmx</DependentUpon>
-      <LastGenOutput>fees_and_facilities_model.Context.cs</LastGenOutput>
+      <DependentUpon>fees_and_facilities_model4.edmx</DependentUpon>
+      <LastGenOutput>fees_and_facilities_model4.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="fees_and_facilities_model.tt">
+    <Content Include="fees_and_facilities_model4.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>fees_and_facilities_model.edmx</DependentUpon>
-      <LastGenOutput>fees_and_facilities_model.cs</LastGenOutput>
+      <DependentUpon>fees_and_facilities_model4.edmx</DependentUpon>
+      <LastGenOutput>fees_and_facilities_model4.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

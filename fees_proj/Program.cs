@@ -30,7 +30,7 @@ namespace fees_proj
         
         static void dormitory_bank_account_details_initiate()
         {
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
                 ArrayList dormitory_bank_det = new ArrayList();
 
@@ -617,7 +617,7 @@ namespace fees_proj
         static void print_all_dormitories_and_bank_accounts()
         {
 
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
                 context.dormitories_table.ToList().ForEach(dormitory =>
                 {
@@ -666,7 +666,7 @@ namespace fees_proj
 
         static void printFunction()
         {
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
                 //Console.WriteLine("Starting to read from database");
                 //context.room_table.ToList().ForEach(r =>
@@ -756,7 +756,7 @@ namespace fees_proj
         static void print_list_of_english_and_turkish_dormitories()
         {
 
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
                 Console.WriteLine("Starting to read from database");
                 context.dormitories_table_translation.ToList().Where(dormitoryx => dormitoryx.language_id == 1).ToList().ForEach(dormitory =>
@@ -1191,7 +1191,7 @@ namespace fees_proj
 
 
 
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
 
                 foreach (room_facility_data data in roomFacilityList)
@@ -1235,7 +1235,7 @@ namespace fees_proj
             ArrayList rooms = new ArrayList();
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/ugursal/IMG_1220.JPG?RenditionID=7",
+                "../../Content/dorm_images/IMG_1220.JPG?RenditionID=7",
                "Uğursal",
                2500,
                2700,
@@ -1249,7 +1249,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-1/img_0868.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_0868.jpg?RenditionID=7",
             "EMU 1",
             2200,
             2400,
@@ -1263,7 +1263,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-1/img_0919.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_0919.jpg?RenditionID=7",
            "EMU 1",
            2640,
            2840,
@@ -1277,7 +1277,7 @@ namespace fees_proj
              ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/sabanci/img_0851.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_0851.jpg?RenditionID=7",
                 "EMU Sabanci",
                 2200,
                 2400,
@@ -1291,7 +1291,7 @@ namespace fees_proj
              ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-2/img_0790.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_0790.jpg?RenditionID=7",
                 "EMU 2",
                 3160,
                 3400,
@@ -1306,7 +1306,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-2/img_0795.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_0795.jpg?RenditionID=7",
                 "EMU 2",
                 2300,
                 2480,
@@ -1321,7 +1321,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-3/img_1049.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1049.jpg?RenditionID=7",
                 "EMU 3",
                 2700,
                 2920,
@@ -1336,7 +1336,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-3/img_1047.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1047.jpg?RenditionID=7",
                 "EMU 3",
                 4500,
                 4840,
@@ -1354,7 +1354,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-3/img_1040.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1040.jpg?RenditionID=7",
                "EMU 3",
                2500,
                2880,
@@ -1370,7 +1370,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/dau-4/img_1014.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1014.jpg?RenditionID=7",
                 "EMU 4",
                 2040,
                 2200,
@@ -1385,7 +1385,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://en.alfamcyprus.com/thumbnail.php?file=pics/pics_rooms/Room_2/bcb0b91c806d560dceaa9b051b8bcfb7.jpg&pwidth=475&pheight=313&pw=570.0000&ph=375.0000&px=0.0000&py=3.0000&pscale=0.2969&pangle=0.0000&force=y",
+                "../../Content/dorm_images/thumbnail.php?file=pics/pics_rooms/Room_2/bcb0b91c806d560dceaa9b051b8bcfb7.jpg&pwidth=475&pheight=313&pw=570.0000&ph=375.0000&px=0.0000&py=3.0000&pscale=0.2969&pangle=0.0000&force=y",
                 "Alfam",
                 3500,
                 3675,
@@ -1400,7 +1400,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr//PublishingImages/Dormitories/alfam/8.jpg?RenditionID=4",
+                "../../Content/dorm_images/8.jpg?RenditionID=4",
                 "Alfam",
                 2300,
                 2415,
@@ -1415,7 +1415,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr//PhotoGalleries/dormitories/2016/alfam-vista/dsc_3852.jpg?RenditionID=4",
+                "../../Content/dorm_images/dsc_3852.jpg?RenditionID=4",
                 "Alfam",
                 3600,
                 3780,
@@ -1428,7 +1428,7 @@ namespace fees_proj
              ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/ugursal/img_1224.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1224.jpg?RenditionID=7",
                 "Uğursal",
                 4600,
                 4900,
@@ -1445,7 +1445,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/marmara/img_1298.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1298.jpg?RenditionID=7",
             "Marmara",
             4600,
             4900,
@@ -1460,7 +1460,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/marmara/img_1304.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1304.jpg?RenditionID=7",
         "Marmara",
         2500,
         2700,
@@ -1473,7 +1473,7 @@ namespace fees_proj
          ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/akdeniz/img_1260.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1260.jpg?RenditionID=7",
                 "Akdeniz",
                 4500,
                 4850,
@@ -1486,7 +1486,7 @@ namespace fees_proj
          ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/akdeniz/img_1268.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1268.jpg?RenditionID=7",
             "Akdeniz",
             2500,
             2750,
@@ -1501,7 +1501,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/longson/IMG_4820.jpg?RenditionID=7",
+                "../../Content/dorm_images/IMG_4820.jpg?RenditionID=7",
                 "Longson",
                 4600,
                 4850,
@@ -1516,7 +1516,7 @@ namespace fees_proj
 
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/longson/IMG_1916.jpg?RenditionID=7",
+                "../../Content/dorm_images/IMG_1916.jpg?RenditionID=7",
                 "Longson",
                 2500,
                 2750,
@@ -1529,7 +1529,7 @@ namespace fees_proj
          ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/homedorm/img_1403.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1403.jpg?RenditionID=7",
                 "Homedorm",
                 4850,
                 5100,
@@ -1542,7 +1542,7 @@ namespace fees_proj
          ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/homedorm/img_1398.jpg?RenditionID=7",
+                "../../Content/dorm_images/img_1398.jpg?RenditionID=7",
                 "Homedorm",
                 2850,
                 3100,
@@ -1555,7 +1555,7 @@ namespace fees_proj
          ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/ramen/IMGL7923.jpg?RenditionID=7",
+                "../../Content/dorm_images/IMGL7923.jpg?RenditionID=7",
                 "Ramen",
                 5000,
                 5250,
@@ -1568,7 +1568,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/ramen/IMGL7903.jpg?RenditionID=7",
+                "../../Content/dorm_images/IMGL7903.jpg?RenditionID=7",
                 "Ramen",
                 2950,
                 3150,
@@ -1581,7 +1581,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/prime-living/DSC01418_.jpg?RenditionID=7",
+                "../../Content/dorm_images/DSC01418_.jpg?RenditionID=7",
                 "Prime Living",
                 4290,
                 4690,
@@ -1595,7 +1595,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2016/prime-living/image-0-02-01-ad033a534acfbb02f9c4c226a5273c5a884bb8984535896319766bfcf2016459-V.jpg?RenditionID=7",
+                "../../Content/dorm_images/image-0-02-01-ad033a534acfbb02f9c4c226a5273c5a884bb8984535896319766bfcf2016459-V.jpg?RenditionID=7",
                 "Prime Living",
                 2990,
                 3290,
@@ -1608,7 +1608,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2017/golden-plus/oda-ici-3.PNG?RenditionID=7",
+                "../../Content/dorm_images/oda-ici-3.PNG?RenditionID=7",
                 "Golden Plus",
                 5200,
                 5600,
@@ -1621,7 +1621,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2017/golden-plus/oda-ici-2.PNG?RenditionID=7",
+                "../../Content/dorm_images/oda-ici-2.PNG?RenditionID=7",
                 "Golden Plus",
                 2950,
                 3200,
@@ -1634,7 +1634,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2017/kamacioglu/STANDART_1.jpg?RenditionID=7",
+                "../../Content/dorm_images/STANDART_1.jpg?RenditionID=7",
                 "Kamacıoğlu",
                 4400,
                 4500,
@@ -1647,7 +1647,7 @@ namespace fees_proj
         ));
 
             rooms.Add(new room_data(
-                "https://dormitories.emu.edu.tr/PhotoGalleries/dormitories/2017/kamacioglu/S%C3%9C%C4%B0T_1.jpg?RenditionID=7",
+                "../../Content/dorm_images/S%C3%9C%C4%B0T_1.jpg?RenditionID=7",
                 "Kamacıoğlu",
                 2400,
                 2500,
@@ -1663,7 +1663,7 @@ namespace fees_proj
 
 
 
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
 
 
@@ -1834,7 +1834,7 @@ namespace fees_proj
 
 
 
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
 
                 foreach (facility_data data in facilityList)
@@ -1925,7 +1925,7 @@ namespace fees_proj
 
         static void languageInitiate()
         {
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
 
                 //   Adding the two languages done
@@ -1940,7 +1940,7 @@ namespace fees_proj
         { //dormitories_types_initiate done
 
 
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
                 context.dormitory_type.Add(new dormitory_type { });
                 context.SaveChanges();
@@ -1977,7 +1977,7 @@ namespace fees_proj
 
         static void dormitories_initiate()
         {
-            using (fees_and_facilitiesEntities4 context = new fees_and_facilitiesEntities4())
+            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
             {
                 ArrayList dormitoriesList = new ArrayList();
                 dormitoriesList.Add(new dormitory_data(
