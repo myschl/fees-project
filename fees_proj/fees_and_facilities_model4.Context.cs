@@ -13,10 +13,10 @@ namespace fees_proj
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities1 : DbContext
+    public partial class fees_facilitiesEntities : DbContext
     {
-        public Entities1()
-            : base("name=Entities1")
+        public fees_facilitiesEntities()
+            : base("name=fees_facilitiesEntities")
         {
         }
     

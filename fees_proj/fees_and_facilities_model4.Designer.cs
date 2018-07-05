@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\DC\source\repos\fees_proj-web\fees_proj\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Pnp\Desktop\latest_project_files\fees_proj-web\fees_proj\fees_and_facilities_model4.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
