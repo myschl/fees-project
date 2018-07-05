@@ -26,6 +26,7 @@ namespace fees_proj
         public string room_picture_url { get; set; }
         public double room_price { get; set; }
         public double room_price_installment { get; set; }
+        public int num_rooms_left { get; set; }
         public int room_area { get; set; }
     
         public virtual dormitories_table dormitories_table { get; set; }
