@@ -19,8 +19,7 @@ namespace fees_proj.data_classes
         String room_type_EN,
         String room_type_TR,
          String room_title_EN,
-        String room_title_TR,
-        int num_rooms_left
+        String room_title_TR
             )
         {
             this.dormitory_name = dormitory_name;
@@ -32,7 +31,6 @@ namespace fees_proj.data_classes
             this.room_type_TR = room_type_TR;
             this.room_title_EN = room_title_EN;
             this.room_title_TR = room_title_TR;
-            this.num_rooms_left = num_rooms_left;
         }
 
         public String dormitory_name { get; set; }
@@ -44,6 +42,5 @@ namespace fees_proj.data_classes
         public String room_type_TR { get; set; }
         public String room_title_EN { get; set; }
         public String room_title_TR { get; set; }
-        public int num_rooms_left { get; set; }
     }
 }
