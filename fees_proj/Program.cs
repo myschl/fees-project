@@ -30,7 +30,7 @@ namespace fees_proj
         
         static void dormitory_bank_account_details_initiate()
         {
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
                 ArrayList dormitory_bank_det = new ArrayList();
 
@@ -617,7 +617,7 @@ namespace fees_proj
         static void print_all_dormitories_and_bank_accounts()
         {
 
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
                 context.dormitories_table.ToList().ForEach(dormitory =>
                 {
@@ -666,7 +666,7 @@ namespace fees_proj
 
         static void printFunction()
         {
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
                 //Console.WriteLine("Starting to read from database");
                 //context.room_table.ToList().ForEach(r =>
@@ -756,7 +756,7 @@ namespace fees_proj
         static void print_list_of_english_and_turkish_dormitories()
         {
 
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
                 Console.WriteLine("Starting to read from database");
                 context.dormitories_table_translation.ToList().Where(dormitoryx => dormitoryx.language_id == 1).ToList().ForEach(dormitory =>
@@ -1191,7 +1191,7 @@ namespace fees_proj
 
 
 
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
 
                 foreach (room_facility_data data in roomFacilityList)
@@ -1243,7 +1243,8 @@ namespace fees_proj
                "Double room",
                "Iki KiŞilik",
                 "Double room",
-               "Iki KiŞilik"
+               "Iki KiŞilik",
+               12
 
         ));
 
@@ -1257,7 +1258,8 @@ namespace fees_proj
             "Triple room",
             "ÜÇ Kişilik",
             "Triple room",
-            "ÜÇ Kişilik"
+            "ÜÇ Kişilik",
+               23
 
              ));
 
@@ -1271,7 +1273,8 @@ namespace fees_proj
            "Quadruple room",
            "Dört Kişilik Stüdyo",
            "Quadruple room",
-           "Dört Kişilik Stüdyo"
+           "Dört Kişilik Stüdyo",
+               23
 
 
              ));
@@ -1285,7 +1288,8 @@ namespace fees_proj
                 "Triple room",
                 "ÜÇ Kişilik",
                 "Triple room",
-                "ÜÇ Kişilik"
+                "ÜÇ Kişilik",
+               34
 
 
              ));
@@ -1299,7 +1303,8 @@ namespace fees_proj
                 "Special Double room",
                 "Özel lki Kişilik",
                 "Special Double room",
-                "Özel lki Kişilik"
+                "Özel lki Kişilik",
+               23
 
 
              ));
@@ -1314,7 +1319,8 @@ namespace fees_proj
                 "Triple room",
                 "ÜÇ Kişilik",
                 "Triple room",
-                "ÜÇ Kişilik"
+                "ÜÇ Kişilik",
+              21
 
 
              ));
@@ -1329,7 +1335,8 @@ namespace fees_proj
                 "Normal double room",
                 "Normal İki Kişilik",
                 "Normal double room",
-                "Normal İki Kişilik"
+                "Normal İki Kişilik",
+               1
 
 
              ));
@@ -1344,7 +1351,8 @@ namespace fees_proj
                 "Corner single room",
                 "Köşe Oda Tek Kişilik",
                 "Corner single room",
-                "Köşe Oda Tek Kişilik"
+                "Köşe Oda Tek Kişilik",
+               12
 
 
 
@@ -1362,7 +1370,8 @@ namespace fees_proj
                "Corner double room",
                "Köşe Oda İki Kişilik",
                "Corner double room",
-               "Köşe Oda İki Kişilik"
+               "Köşe Oda İki Kişilik",
+               12
 
 
 
@@ -1378,14 +1387,15 @@ namespace fees_proj
                 "Quadruple room",
                 "Dört Kişilik",
                 "Quadruple room",
-                "Dört Kişilik"
+                "Dört Kişilik",
+               53
 
 
              ));
 
 
             rooms.Add(new room_data(
-                "../../Content/dorm_images/thumbnail.php?file=pics/pics_rooms/Room_2/bcb0b91c806d560dceaa9b051b8bcfb7.jpg&pwidth=475&pheight=313&pw=570.0000&ph=375.0000&px=0.0000&py=3.0000&pscale=0.2969&pangle=0.0000&force=y",
+                "../../Content/dorm_images/thumbnail.jpg",
                 "Alfam",
                 3500,
                 3675,
@@ -1393,14 +1403,15 @@ namespace fees_proj
                 "C Block single room",
                 "C Blok Tek Kişilik",
                 "C Block single room",
-                "C Blok Tek Kişilik"
+                "C Blok Tek Kişilik",
+               11
 
 
              ));
 
 
             rooms.Add(new room_data(
-                "../../Content/dorm_images/8.jpg?RenditionID=4",
+                "../../Content/dorm_images/c_block.jpg",
                 "Alfam",
                 2300,
                 2415,
@@ -1408,7 +1419,8 @@ namespace fees_proj
                 "C Block double room",
                 "C Blok Iki Kişilik",
                 "C Block double room",
-                "C Blok Iki Kişilik"
+                "C Blok Iki Kişilik",
+               23
 
 
              ));
@@ -1423,7 +1435,8 @@ namespace fees_proj
                 "Vista double room(Balcony)",
                 "Vista Iki KiŞilik(Balkonlu)",
                 "Vista double room(Balcony)",
-                "Vista Iki KiŞilik(Balkonlu)"
+                "Vista Iki KiŞilik(Balkonlu)",
+               23
 
              ));
 
@@ -1436,7 +1449,8 @@ namespace fees_proj
                 "Single room",
                 "Tek KiŞilik",
                 "Single room",
-                "Tek KiŞilik"
+                "Tek KiŞilik",
+               12
 
 
 
@@ -1453,7 +1467,8 @@ namespace fees_proj
             "Single room",
             "Tek KiŞilik",
             "Single room",
-            "Tek KiŞilik"
+            "Tek KiŞilik",
+               4
 
          ));
 
@@ -1468,7 +1483,8 @@ namespace fees_proj
         "Double room",
         "Iki KiŞilik",
         "Double room",
-        "Iki KiŞilik"
+        "Iki KiŞilik",
+               43
 
          ));
 
@@ -1481,7 +1497,8 @@ namespace fees_proj
                 "Single room",
                 "Tek KiŞilik",
                 "Single room",
-                "Tek KiŞilik"
+                "Tek KiŞilik",
+               23
 
          ));
 
@@ -1494,7 +1511,8 @@ namespace fees_proj
             "Double room",
             "Iki KiŞilik",
             "Double room",
-            "Iki KiŞilik"
+            "Iki KiŞilik",
+               12
 
 
          ));
@@ -1509,7 +1527,8 @@ namespace fees_proj
                 "Single room",
                 "Tek KiŞilik",
                 "Single room",
-                "Tek KiŞilik"
+                "Tek KiŞilik",
+               12
 
 
          ));
@@ -1524,7 +1543,8 @@ namespace fees_proj
                 "Double room",
                 "Iki KiŞilik",
                 "Double room",
-                "Iki KiŞilik"
+                "Iki KiŞilik",
+               34
 
          ));
 
@@ -1537,7 +1557,8 @@ namespace fees_proj
                 "Single room",
                 "Tek KiŞilik",
                 "Single room",
-                "Tek KiŞilik"
+                "Tek KiŞilik",
+               22
 
          ));
 
@@ -1550,7 +1571,8 @@ namespace fees_proj
                 "Double room",
                 "Iki KiŞilik",
                 "Double room",
-                "Iki KiŞilik"
+                "Iki KiŞilik",
+               52
 
          ));
 
@@ -1563,7 +1585,8 @@ namespace fees_proj
                 "Single room",
                 "Tek KiŞilik",
                 "Single room",
-                "Tek KiŞilik"
+                "Tek KiŞilik",
+               34
 
         ));
 
@@ -1576,7 +1599,8 @@ namespace fees_proj
                 "Double room",
                 "Iki KiŞilik",
                 "Double room",
-                "Iki KiŞilik"
+                "Iki KiŞilik",
+               23
 
         ));
 
@@ -1589,7 +1613,8 @@ namespace fees_proj
                 "1 + 1 Suite",
                 "1 + 1 Suit",
                 "1 + 1 Suite",
-                "1 + 1 Suit"
+                "1 + 1 Suit",
+               34
 
 
         ));
@@ -1603,7 +1628,8 @@ namespace fees_proj
                 "Double room",
                 "Iki KiŞilik",
                 "Double room",
-                "Iki KiŞilik"
+                "Iki KiŞilik",
+               5
 
         ));
 
@@ -1616,7 +1642,8 @@ namespace fees_proj
                 "Single room with balcony",
                 "Tek KiŞilik Balkonlu",
                 "Single room with balcony",
-                "Tek KiŞilik Balkonlu"
+                "Tek KiŞilik Balkonlu",
+               20
 
         ));
 
@@ -1629,7 +1656,8 @@ namespace fees_proj
                 "Double room with balcony",
                 "Iki KiŞilik Balkonlu",
                 "Double room with balcony",
-                "Iki KiŞilik Balkonlu"
+                "Iki KiŞilik Balkonlu",
+               10
 
         ));
 
@@ -1642,7 +1670,8 @@ namespace fees_proj
                 "Single room",
                 "Tek KiŞilik",
                 "Single room",
-                "Tek KiŞilik"
+                "Tek KiŞilik",
+               20
 
         ));
 
@@ -1655,7 +1684,8 @@ namespace fees_proj
                 "Double room",
                 "Iki KiŞilik",
                 "Double room",
-                "Iki KiŞilik"
+                "Iki KiŞilik",
+               3
 
 
         ));
@@ -1663,7 +1693,7 @@ namespace fees_proj
 
 
 
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
 
 
@@ -1686,7 +1716,8 @@ namespace fees_proj
                         room_picture_url = data.room_picture_url,
                         room_price = data.room_price,
                         room_price_installment = data.room_price_installment,
-                        room_area = data.room_area
+                        room_area = data.room_area,
+                        num_rooms_left = data.num_rooms_left
                     };
 
                     context.room_table.Add(room);
@@ -1834,7 +1865,7 @@ namespace fees_proj
 
 
 
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
 
                 foreach (facility_data data in facilityList)
@@ -1925,7 +1956,7 @@ namespace fees_proj
 
         static void languageInitiate()
         {
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
 
                 //   Adding the two languages done
@@ -1940,7 +1971,7 @@ namespace fees_proj
         { //dormitories_types_initiate done
 
 
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
                 context.dormitory_type.Add(new dormitory_type { });
                 context.SaveChanges();
@@ -1977,7 +2008,7 @@ namespace fees_proj
 
         static void dormitories_initiate()
         {
-            using (fees_facilitiesEntities context = new fees_facilitiesEntities())
+            using (Entities1 context = new Entities1())
             {
                 ArrayList dormitoriesList = new ArrayList();
                 dormitoriesList.Add(new dormitory_data(
@@ -1985,7 +2016,8 @@ namespace fees_proj
 
                     "TL",
                     "&#8378;",
-                    "",
+                    "https://dormitories.emu.edu.tr/en/dormitories/emu-dormitories/emu-1",
+                    "https://dormitories.emu.edu.tr/tr/yurtlar/dau/dau-1",
                     "for male Students",
                     "Per semester",
                     "EMU 1",
@@ -1999,7 +2031,8 @@ namespace fees_proj
 
                          "TL",
                          "&#8378;",
-                         "",
+                         "https://dormitories.emu.edu.tr/en/dormitories/emu-dormitories/sabanci",
+                         "https://dormitories.emu.edu.tr/tr/yurtlar/dau/sabanci",
                          "For female",
                          "Per semester",
                          "EMU Sabanci",
@@ -2013,7 +2046,8 @@ namespace fees_proj
 
                    "TL",
                    "&#8378;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/emu-dormitories/emu-2",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/dau/dau-2",
                    "for male students",
                    "Per semester",
                    "EMU 2",
@@ -2027,7 +2061,8 @@ namespace fees_proj
 
                    "TL",
                    "&#8378;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/emu-dormitories/emu-3",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/dau/dau-3",
                    "separate blocks for female and male students",
                    "Per semester",
                    "EMU 3",
@@ -2040,7 +2075,8 @@ namespace fees_proj
 
                    "TL",
                    "&#8378;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/emu-dormitories/emu-4",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/dau/dau-4",
                    "for female students",
                    "Per semester",
                    "EMU 4",
@@ -2053,7 +2089,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/alfam",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/alfam",
                    "For female and male students on separate floors",
                    "Academic Year",
                    "Alfam",
@@ -2067,7 +2104,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/ugursal",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/ugursal",
                    "For female and male students on separate floors",
                    "Academic Year",
                    "Uğursal",
@@ -2081,7 +2119,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/marmara",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/marmara",
                    "For female and male students on separate floors",
                    "Academic Year",
                    "Marmara",
@@ -2095,7 +2134,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/akdeniz",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/akdeniz",
                    "For female and male students in separate blocks",
                    "Academic Year",
                    "Akdeniz",
@@ -2108,7 +2148,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/longson",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/longson",
                    "For female and male students on separate blocks",
                    "Academic Year",
                    "Longson",
@@ -2122,7 +2163,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/home-dorm",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/home-dorm",
                    "For female and male students in separate blocks",
                    "Academic Year",
                    "Homedorm",
@@ -2136,7 +2178,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/ramen",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/ramen",
                    "For female and male students",
                    "Academic Year",
                    "Ramen",
@@ -2149,7 +2192,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/prime-living",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/prime-living",
                    "For female and male students on separate blocks",
                    "Academic Year",
                    "Prime Living",
@@ -2162,7 +2206,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/golden-plus",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/golden-plus",
                    "For female and male students on separate blocks",
                    "Academic Year",
                    "Golden Plus",
@@ -2175,7 +2220,8 @@ namespace fees_proj
 
                    "USD",
                    "&#36;",
-                   "",
+                   "https://dormitories.emu.edu.tr/en/dormitories/privately-owned-campus-dormitories/kamacioglu-dormitory",
+                   "https://dormitories.emu.edu.tr/tr/yurtlar/yid-diger-yurtlar/kamacioglu-yurdu",
                    "For female and male students on separate blocks",
                    "Academic Year",
                    "Kamacıoğlu",
@@ -2211,7 +2257,7 @@ namespace fees_proj
                     {
                         language_id = language_Table_EN.id,
                         dormitories_table_non_trans_id = dormitory.id,
-                        dormitory_address = data.dormitory_address,
+                        dormitory_address = data.dormitory_address_EN,
                         gender_allocation = data.gender_allocation_EN,
                         rooms_payment_period = data.rooms_payment_period_EN,
                         dormitory_name = data.dormitory_name_EN
@@ -2222,7 +2268,7 @@ namespace fees_proj
                     {
                         language_id = language_Table_TR.id,
                         dormitories_table_non_trans_id = dormitory.id,
-                        dormitory_address = data.dormitory_address,
+                        dormitory_address = data.dormitory_address_TR,
                         gender_allocation = data.gender_allocation_TR,
                         rooms_payment_period = data.rooms_payment_period_TR,
                         dormitory_name = data.dormitory_name_TR
